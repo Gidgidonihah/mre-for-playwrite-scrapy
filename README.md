@@ -5,7 +5,7 @@ The error is that if you hit a page that uses a meta redirect, scrapy_playwright
 raise the following error:
 
 ```
-ERROR: Error downloading <GET https://gidgidonihah.github.io/mre-for-playwrite-scrapy/>
+ERROR: Error downloading <GET https://gidgidonihah.github.io/mre-for-playwrite-scrapy-meta-refresh/>
 Traceback (most recent call last):
   File "/virtualenvs/mre/lib/python3.10/site-packages/twisted/internet/defer.py", line 1693, in _inlineCallbacks
     result = context.run(
