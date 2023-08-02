@@ -7,7 +7,7 @@ class ExampleSpider(scrapy.Spider):
     name = "meta-refresh"
 
     def start_requests(self):
-        url = "https://gidgidonihah.github.io/mre-for-playwrite-scrapy-meta-refresh/"
+        url = "https://gidgidonihah.github.io/mre-for-scrapy-playwright-meta-refresh/"
         yield scrapy.Request(url, meta={"playwright": True})
 
     def parse(self, response, **kwargs):

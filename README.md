@@ -1,11 +1,13 @@
-# mre-for-playwrite-scrapy
-A very simple MRE for an error with playwrite_scrapy
+# MRE for scrapy-playwright
+
+A very simple MRE for an error with scrapy-playwright
+([#217](https://github.com/scrapy-plugins/scrapy-playwright/issues/217))
 
 The error is that if you hit a page that uses a meta redirect, scrapy_playwright will
 raise the following error:
 
 ```
-ERROR: Error downloading <GET https://gidgidonihah.github.io/mre-for-playwrite-scrapy-meta-refresh/>
+ERROR: Error downloading <GET https://gidgidonihah.github.io/mre-for-scrapy-playwright-meta-refresh/>
 Traceback (most recent call last):
   File "/virtualenvs/mre/lib/python3.10/site-packages/twisted/internet/defer.py", line 1693, in _inlineCallbacks
     result = context.run(
