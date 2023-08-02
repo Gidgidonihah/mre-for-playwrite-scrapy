@@ -12,6 +12,11 @@ BOT_NAME = "mre"
 SPIDER_MODULES = ["mre.spiders"]
 NEWSPIDER_MODULE = "mre.spiders"
 
+# Enable scrapy_playwright
+DOWNLOAD_HANDLERS = {
+    "http": "scrapy_playwright.handler.ScrapyPlaywrightDownloadHandler",
+    "https": "scrapy_playwright.handler.ScrapyPlaywrightDownloadHandler",
+}
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = "mre (+http://www.yourdomain.com)"
