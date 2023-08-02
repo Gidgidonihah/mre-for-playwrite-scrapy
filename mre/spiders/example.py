@@ -2,9 +2,13 @@ import scrapy
 
 
 class ExampleSpider(scrapy.Spider):
-    name = "example"
-    allowed_domains = ["example.com"]
-    start_urls = ["https://example.com"]
+    """A Minimum working example of meta-refresh failure."""
 
-    def parse(self, response):
-        pass
+    name = "meta-refresh"
+
+    def start_requests(self):
+        url = "https://gidgidonihah.github.io/mre-for-playwrite-scrapy/"
+        yield scrapy.Request(url, meta={"playwright": True})
+
+    def parse(self, response, **kwargs):
+        """Not needed because an error will be raised by playwright_scrapy."""
